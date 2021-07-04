@@ -107,7 +107,7 @@ fi
 status_code="$(jq -nc \
 	--arg tag_name         "$tag" \
 	--arg name             "$INPUT_NAME" \
-	--arg body             "$(printf '%s' "$INPUT_BODY" | sed 's|\\|\\\\|g')" \
+	--arg body             "$(printf '%s' "$INPUT_BODY" | sed 's|\\|\\\\|\n|g')" \
 	--arg target_commitish "$INPUT_COMMITISH" \
 	--argjson draft        "${draft:-null}" \
 	--argjson prerelease   "${INPUT_PRERELEASE:-null}" \
