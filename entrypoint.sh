@@ -1,6 +1,6 @@
 #!/bin/sh -le
 
-PKG="meeDamian/github-release@2.0"
+PKG="KorewaLidesu/github-release@2.0"
 
 #
 ## Input verification
